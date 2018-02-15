@@ -1,0 +1,10 @@
+/** Custom (non theme) behavior */
+
+/** All loaders are hidden by default */
+.loader{ display: none; }
+
+/** The console element */
+.console{
+    background-color: #333;
+    color: #efefef;
+}

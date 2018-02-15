@@ -1,0 +1,19 @@
+{
+    "server" : {
+        "address"   : "127.0.0.1",
+		"port"		: 3000
+    },
+    "log" : {
+        "level"     : "debug",
+        "stdout"    : true,
+        "file"      : "logs/message-center.log"
+    },
+    "store" : {
+		"redis" : {
+            "host" : "127.0.0.1",
+            "port" : "6379",
+            "db"   : 1,
+            "auth" : "foobared"
+        }
+	}
+}

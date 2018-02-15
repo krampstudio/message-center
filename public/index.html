@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ContinuousPHP Message Center Console</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="js/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/behav.css" />
+      
+        <script  type="text/javascript" data-main="js/app.js" src="js/lib/requirejs/require.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="page-header">
+                <h1>Continuous PHP Message Center Console</h1>
+                <p class="lead">Helps you to test the message center.</p>
+            </header>
+            <div class="row">
+                <div class="col-md-4">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="token" class="col-md-3 control-label">Token</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="token" placeholder="token" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="start" class="col-md-3 control-label">Retrieve messages</label>
+                            <div class="col-md-9">
+                                <button id="start" class="btn btn-success">
+                                    <span class="glyphicon glyphicon-play"></span> Start
+                                </button>
+                                <button id="stop" class="btn btn-danger disabled">
+                                    <span class="glyphicon glyphicon-stop"></span> Stop
+                                </button>
+                            </div>
+                        </div>       
+                    </form>
+                </div>
+                <div id="result" class="col-md-8">
+                    <div class="jobs"></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Results <img src="img/loader.gif" class="loader" alt="loading"/></h3>
+                        </div>
+                        <div class="panel-body console"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+    
